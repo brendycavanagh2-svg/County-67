@@ -1,3 +1,0 @@
-package com.county67;
-import android.app.*;import android.os.*;import android.webkit.*;import android.view.*;import android.graphics.Color;
-public class MainActivity extends Activity { @Override public void onCreate(Bundle b){super.onCreate(b);getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);WebView w=new WebView(this);w.setBackgroundColor(Color.BLACK);WebSettings s=w.getSettings();s.setJavaScriptEnabled(true);s.setDomStorageEnabled(true);s.setMediaPlaybackRequiresUserGesture(false);w.setOverScrollMode(View.OVER_SCROLL_NEVER);w.loadUrl("file:///android_asset/index.html");setContentView(w);} @Override public void onBackPressed(){ } }
